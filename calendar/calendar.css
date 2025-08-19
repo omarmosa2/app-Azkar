@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+    .prayer-times {
+        font-family: "Tajawal", sans-serif;
+        text-align: center;
+        padding: 20px;
+        color: #333;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    .prayer-times h2 {
+        font-size: 3rem;
+        color: #00897b;
+        margin-bottom: 30px;
+    }
+
+    #prayerTimesContainer p {
+        font-size: 2rem;
+        margin: 10px 0;
+        padding: 12px;
+        background-color: #f9f9f9;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    /* ألوان مخصصة لكل صلاة */
+    #prayerTimesContainer p:nth-child(1) { color: #ff7043; background-color: #ffe5d9; } /* الفجر */
+    #prayerTimesContainer p:nth-child(2) { color: #ffca28; background-color: #fff8e1; } /* الشروق */
+    #prayerTimesContainer p:nth-child(3) { color: #66bb6a; background-color: #e8f5e9; } /* الظهر */
+    #prayerTimesContainer p:nth-child(4) { color: #42a5f5; background-color: #e3f2fd; } /* العصر */
+    #prayerTimesContainer p:nth-child(5) { color: #ab47bc; background-color: #f3e5f5; } /* المغرب */
+    #prayerTimesContainer p:nth-child(6) { color: #7e57c2; background-color: #ede7f6; } /* العشاء */
+}

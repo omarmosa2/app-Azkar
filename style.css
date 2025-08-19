@@ -1,0 +1,323 @@
+/* استيراد الخط العربي */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+
+/* إعدادات عامة */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --light-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --border-radius: 15px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tajawal", sans-serif !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--text-primary);
+    direction: rtl;
+    min-height: 100vh;
+}
+
+/* تنسيق البطاقات المخصصة */
+.app-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius) !important;
+    transition: var(--transition);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.app-card .card-body {
+    padding: 1.5rem !important;
+}
+
+.app-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.app-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    line-height: 1.3;
+}
+
+.app-card:hover .app-title {
+    color: var(--secondary-color);
+}
+
+/* تنسيق الهيدر */
+.card-header.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), #2980b9) !important;
+    border: none !important;
+}
+
+/* تنسيق الحاوي الرئيسي */
+.container-fluid.min-vh-100 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem 1rem;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container-fluid.min-vh-100 {
+        padding: 1rem 0.5rem;
+    }
+
+    .app-icon {
+        font-size: 2rem;
+    }
+
+    .app-title {
+        font-size: 0.8rem;
+    }
+
+    .card-body {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-icon {
+        font-size: 1.8rem;
+    }
+
+    .app-title {
+        font-size: 0.75rem;
+    }
+}
+
+/* تنسيق الصفحات الفرعية */
+.azkar-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.azkar-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.azkar-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.azkar-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.azkar-counter {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin: 0 auto 1rem;
+    display: block;
+    min-width: 80px;
+}
+
+.azkar-counter:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.azkar-counter:active {
+    transform: scale(0.95);
+}
+
+/* تنسيق صفحة العنوان */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), #2980b9);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* زر العودة */
+.back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--card-bg);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background: var(--primary-color);
+    color: white;
+}
+
+/* تنسيق خاص للعداد */
+.counter-display {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.counter-controls .btn {
+    font-family: "Tajawal", sans-serif !important;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.counter-controls .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* تنسيق خاص للبوصلة */
+.compass-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+#compass {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle, #ffffff, #f8f9fa);
+    box-shadow: var(--shadow);
+}
+
+#needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 60px;
+    background: var(--danger-color);
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%);
+    border-radius: 2px;
+    transition: transform 0.5s ease;
+}
+
+.direction-info {
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* تنسيق نصوص الحالة */
+.status-text {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* تحسينات إضافية للاستجابة */
+@media (max-width: 480px) {
+    .back-button {
+        top: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .azkar-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .azkar-counter {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    #compass {
+        width: 120px;
+        height: 120px;
+    }
+
+    #needle {
+        height: 50px;
+    }
+}
+
+/* تنسيق للطباعة */
+@media print {
+    .back-button,
+    .azkar-counter,
+    .btn {
+        display: none !important;
+    }
+
+    .container-fluid {
+        background: white !important;
+    }
+
+    .page-header {
+        background: white !important;
+        color: black !important;
+    }
+}
+

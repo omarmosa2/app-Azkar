@@ -1,0 +1,103 @@
+/* إعدادات الصفحة الأساسية */
+body {
+    font-family: "Tajawal", sans-serif;
+    background-color: #f4f4f9;
+    direction: rtl;
+    text-align: center;
+    padding: 10px;
+}
+
+/* تنسيق الحاوية */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* العنوان الرئيسي */
+h1 {
+    font-size: 1.6rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* تنسيق العناصر الخاصة بالأذكار */
+.dhikr-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dhikr-item {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dhikr-item h2 {
+    font-size: 1.2rem;
+    color: #00796b;
+    margin-bottom: 8px;
+}
+
+.dhikr-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.dhikr-button:hover {
+    background-color: #45a049;
+}
+
+.dhikr-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.dhikr-item span {
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .dhikr-item h2 {
+        font-size: 1.1rem;
+    }
+
+    .dhikr-button {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .dhikr-container {
+        gap: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .dhikr-item {
+        padding: 10px;
+    }
+
+    .dhikr-item p {
+        font-size: 0.95rem;
+    }
+}

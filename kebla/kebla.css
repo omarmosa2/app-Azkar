@@ -1,0 +1,108 @@
+/* إعدادات الصفحة الأساسية */
+body {
+    font-family: "Tajawal", sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#compass {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #4CAF50;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+#needle {
+    width: 3px;
+    height: 90px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* استعلامات لتنسيق الصفحة لشاشات الجوال (أقل من 768px) */
+@media (max-width: 768px) {
+    /* تنسيق العنوان */
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    /* تعديل حجم البوصلة */
+    #compass {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* تعديل حجم السهم */
+    #needle {
+        width: 2px;
+        height: 80px;
+    }
+
+    /* تنسيق الزر */
+    button {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+        width: 100%;
+    }
+
+    /* تعديل النص */
+    p {
+        font-size: 1rem;
+    }
+
+    /* تعديل المسافات داخل الحاوية */
+    .container {
+        padding: 15px;
+    }
+
+    /* تحسين محاذاة العناصر داخل الحاوية */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
